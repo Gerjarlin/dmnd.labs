@@ -58,21 +58,6 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ className = '' }) => {
           imageAlt="Marketing support illustration"
           className="mb-16"
         />
-        
-        <div className="text-center mt-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-          >
-            <a href="#launch">
-              <button className="bg-gradient-to-r from-primary-purple to-primary-teal text-white font-medium py-3 px-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300">
-                Launch Your Project Now
-              </button>
-            </a>
-          </motion.div>
-        </div>
       </div>
     </section>
   );
