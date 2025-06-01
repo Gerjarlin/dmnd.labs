@@ -7,7 +7,8 @@
 :root {
   --primary-purple: #8b5cf6;
   --primary-teal: #14b8a6;
-  --primary-blue: #3b82f6;
+  --primary-blue: #4A9FF5;
+  --primary-yellow: #F5D04A;
 }
 
 body {
@@ -27,9 +28,9 @@ body {
     125deg,
     rgba(139, 92, 246, 0.08) 0%,
     rgba(20, 184, 166, 0.08) 25%,
-    rgba(59, 130, 246, 0.08) 50%,
-    rgba(139, 92, 246, 0.08) 75%,
-    rgba(20, 184, 166, 0.08) 100%
+    rgba(74, 159, 245, 0.08) 50%,
+    rgba(245, 208, 74, 0.08) 75%,
+    rgba(139, 92, 246, 0.08) 100%
   );
   background-size: 400% 400%;
   animation: gradientAnimation 15s ease infinite;
@@ -84,9 +85,9 @@ body {
     125deg,
     rgba(139, 92, 246, 0.1) 0%,
     rgba(20, 184, 166, 0.1) 25%,
-    rgba(59, 130, 246, 0.1) 50%,
-    rgba(139, 92, 246, 0.1) 75%,
-    rgba(20, 184, 166, 0.1) 100%
+    rgba(74, 159, 245, 0.1) 50%,
+    rgba(245, 208, 74, 0.1) 75%,
+    rgba(139, 92, 246, 0.1) 100%
   );
   background-size: 400% 400%;
   animation: gradientAnimation 15s ease infinite;
@@ -102,10 +103,10 @@ body {
   bottom: 0;
   background: linear-gradient(
     125deg,
-    rgba(59, 130, 246, 0.08) 0%,
+    rgba(74, 159, 245, 0.08) 0%,
     rgba(139, 92, 246, 0.08) 25%,
     rgba(20, 184, 166, 0.08) 50%,
-    rgba(59, 130, 246, 0.08) 75%,
+    rgba(245, 208, 74, 0.08) 75%,
     rgba(139, 92, 246, 0.08) 100%
   );
   background-size: 400% 400%;

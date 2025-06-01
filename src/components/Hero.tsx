@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import GlitchText from './GlitchText';
 
 interface HeroProps {
   className?: string;
@@ -20,11 +19,10 @@ export const Hero: React.FC<HeroProps> = ({ className = '' }) => {
             transition={{ duration: 0.6, delay: 0.1 }}
           >
             <h1 className="text-3xl md:text-5xl font-display font-bold mb-4 text-gray-800 leading-tight">
-              Launch and invest in projects with <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-purple to-primary-teal">unparalleled security</span>
+              The Premium Base Launchpad
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto mt-6">
-              For developers: Get the support and resources you deserve to bring your ideas to life.<br/>
-              For investors: Discover verified projects with built-in protection against rug pulls.
+              Launch your project with unparalleled security for investors and comprehensive support for developers
             </p>
           </motion.div>
           

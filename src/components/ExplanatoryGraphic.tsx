@@ -1,5 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import AnimatedVerificationSvg from './AnimatedVerificationSvg';
+import AnimatedLiquiditySvg from './AnimatedLiquiditySvg';
+import AnimatedMarketingSvg from './AnimatedMarketingSvg';
 
 interface ExplanatoryGraphicProps {
   title: string;
@@ -18,6 +21,22 @@ export const ExplanatoryGraphic: React.FC<ExplanatoryGraphicProps> = ({
   reverse = false,
   className = ''
 }) => {
+  // Determine which SVG component to render based on the title
+  const renderSvgComponent = () => {
+    if (title.includes("Verification")) {
+      return <AnimatedVerificationSvg />;
+    } else if (title.includes("Liquidity")) {
+      return <AnimatedLiquiditySvg />;
+    } else if (title.includes("Marketing")) {
+      return <AnimatedMarketingSvg />;
+    }
+    return <img 
+      src={imageSrc} 
+      alt={imageAlt} 
+      className="w-full h-auto object-cover"
+    />;
+  };
+
   return (
     <div className={`py-16 ${className}`}>
       <div className={`container mx-auto px-4`}>
@@ -42,11 +61,9 @@ export const ExplanatoryGraphic: React.FC<ExplanatoryGraphicProps> = ({
           >
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-primary-purple/20 to-primary-teal/20 rounded-xl transform rotate-3"></div>
-              <img 
-                src={imageSrc} 
-                alt={imageAlt} 
-                className="relative z-10 rounded-xl shadow-lg w-full h-auto object-cover"
-              />
+              <div className="relative z-10 rounded-xl shadow-lg w-full overflow-hidden p-6 bg-white">
+                {renderSvgComponent()}
+              </div>
             </div>
           </motion.div>
         </div>
