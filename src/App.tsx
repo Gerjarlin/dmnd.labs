@@ -6,7 +6,6 @@ import TrendingProjects from './components/TrendingProjects';
 import SecurityFeatures from './components/SecurityFeatures';
 import ProjectSupport from './components/ProjectSupport';
 import HowItWorks from './components/HowItWorks';
-import ProjectCreator from './components/ProjectCreator';
 import DiamondConnection from './components/DiamondConnection';
 import Footer from './components/Footer';
 
@@ -29,8 +28,6 @@ function App() {
         <ProjectSupport />
         
         <DiamondConnection className="bg-gray-50" />
-        
-        <ProjectCreator />
       </main>
       
       <Footer />
