@@ -37,7 +37,7 @@ export const Hero: React.FC<HeroProps> = ({ className = '' }) => {
                 Explore Projects
               </button>
             </a>
-            <a href="#launch">
+            <a href="/launch">
               <button className="bg-white text-gray-800 border border-gray-200 font-medium py-3 px-8 rounded-lg hover:bg-gray-50 transition-all duration-300 w-full sm:w-auto">
                 Launch Your Project
               </button>

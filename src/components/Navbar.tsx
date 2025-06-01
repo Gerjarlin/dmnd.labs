@@ -44,7 +44,7 @@ export const Navbar: React.FC<NavbarProps> = ({ className = '' }) => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
               >
-                <a href="#launch" className="text-gray-700 hover:text-primary-purple px-3 py-2 text-sm font-medium transition-colors duration-200">Launch</a>
+                <a href="/launch" className="text-gray-700 hover:text-primary-purple px-3 py-2 text-sm font-medium transition-colors duration-200">Launch</a>
               </motion.div>
               
               <motion.div

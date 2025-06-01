@@ -71,7 +71,7 @@ export const Footer: React.FC<FooterProps> = ({ className = '' }) => {
             <h4 className="font-semibold text-gray-900 mb-4">Platform</h4>
             <ul className="space-y-2">
               <li><a href="#projects" className="text-gray-600 hover:text-primary-purple transition-colors duration-200">Browse Projects</a></li>
-              <li><a href="#launch" className="text-gray-600 hover:text-primary-purple transition-colors duration-200">Launch a Project</a></li>
+              <li><a href="/launch" className="text-gray-600 hover:text-primary-purple transition-colors duration-200">Launch a Project</a></li>
               <li><a href="#docs" className="text-gray-600 hover:text-primary-purple transition-colors duration-200">Documentation</a></li>
               <li><a href="#faq" className="text-gray-600 hover:text-primary-purple transition-colors duration-200">FAQ</a></li>
             </ul>
